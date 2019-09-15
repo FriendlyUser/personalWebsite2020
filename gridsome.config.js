@@ -1,5 +1,6 @@
 module.exports = {
   siteName: 'David Li Portoflio Site',
+  siteUrl: 'https://friendlyuser.github.io/personalWebsite2020',
   plugins: [
     {
       use: '@gridsome/source-filesystem',
