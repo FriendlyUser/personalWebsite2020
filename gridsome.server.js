@@ -9,11 +9,11 @@ const axios = require('axios')
 module.exports = function (api) {
   api.chainWebpack((config, { isServer }) => {
     if (isServer) {
-      config.externals([
-        nodeExternals({
-          whitelist: [/^bulma/,/^vuetify/]
-        })
-      ])
+      // config.externals([
+      //   nodeExternals({
+      //     whitelist: [/^bulma/,/^vuetify/]
+      //   })
+      // ])
     }
   })
 
