@@ -5,7 +5,8 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 const axios = require('axios')
-
+const fs = require('fs')
+const parseMD = require('./utils/parseMD')
 module.exports = function (api) {
   api.chainWebpack((config, { isServer }) => {
     if (isServer) {
@@ -32,12 +33,17 @@ module.exports = function (api) {
           typeName: 'GithubProject',
           route: '/project/:name/'
         })
+        // figure out how to pull badges somehow
         // dump all data inside, subfilter later
         const { id, name, node_id, html_url, created_at, updated_at, language, forks, stargazers_count, description } = project
+
+        // get markdown file if exists
+        var contents = parseMD(`project/${name}/index.md`)
         contentType.addNode({
           name, name,
           id: id,
           title: name,
+          contents: contents,
           created_at: created_at,
           updated_at: updated_at,
           html_url: html_url,

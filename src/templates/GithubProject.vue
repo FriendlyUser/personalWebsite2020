@@ -1,11 +1,10 @@
 <template>
-<div>
-  <Navbar />
+<Layout title="Project">
   <div class="container">
     <div class="card">
       <header class="card-header">
         <p class="card-header-title">
-          Component
+          {{$page.githubProject.name}}
         </p>
         <a href="#" class="card-header-icon" aria-label="more options">
           <b-icon
@@ -17,11 +16,13 @@
       <div class="card-content">
         <div class="content">
           <br>
-          <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-          <button class="button is-dark">
+          <div v-html="$page.githubProject.contents">
+          </div>
+          <!-- <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time> -->
+          <!-- <button class="button is-dark">
             <b-icon icon="check"></b-icon>
             <span>Finish</span>
-          </button>
+          </button> -->
         </div>
       </div>
       <footer class="card-footer">
@@ -31,7 +32,7 @@
       </footer>
     </div>
   </div>
-</div>
+</Layout>
 </template>
 
 
@@ -42,6 +43,8 @@ query githubProject ($path: String!) {
     html_url
     created_at
     forks
+    name
+    contents
     language
     data {
       language
@@ -53,10 +56,10 @@ query githubProject ($path: String!) {
 </page-query>
 
 <script>
-import Navbar from '~/components/Navbar'
+import Layout from '~/layouts/Default'
 export default {
   components: {
-    Navbar
+    Layout
   },
   metaInfo () {
     return {

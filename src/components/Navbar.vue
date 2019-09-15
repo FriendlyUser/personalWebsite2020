@@ -5,7 +5,7 @@
     <nav class="navbar">
       <div class="container">
         <div class="navbar-brand">
-          <a class="navbar-item">
+          <a class="navbar-item" href="/">
             <!-- <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo"> -->
             <img src="https://s.gravatar.com/avatar/d5a6e001f027e8cf3dbf048a926baa77?s=160" alt="Logo" />
           </a>

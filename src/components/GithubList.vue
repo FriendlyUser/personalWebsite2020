@@ -9,7 +9,8 @@
               <p class="card-header-title">
                 {{ item.node.title}}
               </p>
-              <a href="#" class="card-header-icon" aria-label="more options">
+              <!--Change link url and icon, point to project page-->
+              <a v-bind:href="item.node.path" class="card-header-icon" aria-label="more options">
                 <b-icon
                   icon="github-face"
                   size="is-small">

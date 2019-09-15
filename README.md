@@ -1,6 +1,9 @@
-# Default starter for Gridsome
+## Personal Portoflio
 
-This is the project you get when you run `gridsome create new-project`.
+Created in gridsome used to showcase my projects and to stop having issues updating hugo academic.
+
+
+I have added extra folders called `project` and `util` to store local markdown files and for data processing.
 
 ### 1. Install Gridsome CLI tool if you don't have
 
