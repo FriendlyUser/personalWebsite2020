@@ -21,14 +21,15 @@ steps:
   displayName: 'Install Node.js'
 
 - task: DownloadSecureFile@1
+  name: envFILE
   inputs:
     secureFile: 'GRIDSOME_ENV'
   
 - script: |
     npm install
-    echo $(.GRIDSOME_ENV.secureFilePath) moving root
+    echo $(envFILE.secureFilePath) moving root
     ls -ha || true
-    cp $(GRIDSOME_ENV.secureFilePath) .env
+    cp $(envFILE.secureFilePath) .env
     ls -a || true
     npm install -g @gridsome/cli
     gridsome build
