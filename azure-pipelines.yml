@@ -19,15 +19,14 @@ steps:
   inputs:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
+
 - task: DownloadSecureFile@1
   inputs:
-    secureFile: .env
-  displayName: 'Get the deploy key'
-
+    secureFile: '.env'
 - script: |
     npm install
     echo $(.env.secureFilePath) moving root
-    ls
+    ls -ha || true
     npm install -g @gridsome/cli
     gridsome build
     ls
