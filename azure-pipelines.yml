@@ -23,6 +23,7 @@ steps:
 - task: DownloadSecureFile@1
   inputs:
     secureFile: '.env'
+  
 - script: |
     npm install
     echo $(.env.secureFilePath) moving root
