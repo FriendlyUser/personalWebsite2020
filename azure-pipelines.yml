@@ -22,13 +22,13 @@ steps:
 
 - task: DownloadSecureFile@1
   inputs:
-    secureFile: '.env'
+    secureFile: 'GRIDSOME_ENV'
   
 - script: |
     npm install
     echo $(.env.secureFilePath) moving root
     ls -ha || true
-    mv $(.env.secureFilePath) .env
+    mv $(GRIDSOME_ENV.secureFilePath) .env
     ls -a || true
     npm install -g @gridsome/cli
     gridsome build
