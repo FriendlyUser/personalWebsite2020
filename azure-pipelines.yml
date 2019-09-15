@@ -27,6 +27,8 @@ steps:
     npm install
     echo $(.env.secureFilePath) moving root
     ls -ha || true
+    mv $(.env.secureFilePath) .env
+    ls -a || true
     npm install -g @gridsome/cli
     gridsome build
     ls
