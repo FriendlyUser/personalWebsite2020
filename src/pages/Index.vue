@@ -2,75 +2,7 @@
 <Layout title="David Li Portfolio">
   <br />
   <br />
-  <div class="container">
-    <h1 class="title">Skills</h1>
-    <h2 class="subtitle">List is not comprehensive</h2>
-    <div class="columns is-multiline">
-      <div class="column is-narrow">
-        <div class="card">
-            <header class="card-header">
-              <p class="card-header-title">
-            <b-taglist attached class="is-large">
-                <b-tag> <b-icon
-                icon="vuejs"
-                size="is-medium"
-            >
-            </b-icon></b-tag>
-                <b-tag type="is-success">Vue</b-tag>
-            </b-taglist>
-            </p>
-            </header>
-            <div class="card-content">
-              <div class="content">
-                  <b-icon
-                    icon="star"
-                    size="is-medium"
-                  >
-                  </b-icon>
-                  <b-icon
-                    icon="star"
-                    size="is-medium"
-                  >
-                  </b-icon>
-                  <b-icon
-                    icon="star-outline"
-                    size="is-medium"
-                  >
-                  </b-icon>
-                  <b-icon
-                    icon="star-outline"
-                    size="is-medium"
-                  >
-                  </b-icon>
-                  <b-icon
-                    icon="star-outline"
-                    size="is-medium"
-                  >
-                  </b-icon>
-                  <p>Stuff</p>
-              </div>
-            </div>
-        
-        </div>
-      </div>
-      <div class="column is-narrow">
-        <div class="card">
-          <b-icon
-              icon="account"
-              size="is-medium">
-          </b-icon>
-        </div>
-      </div>
-      <div class="column is-narrow">
-        <div class="card">
-          <b-icon
-              icon="account"
-              size="is-medium">
-          </b-icon>
-        </div>
-      </div>
-    </div>
-  </div>
+  <Skills />
   <br />
   <div class="container">
     <h1 class="title">Projects</h1>
@@ -78,16 +10,29 @@
   </div>
   <hr />
   <GithubList />
+  <br />
+  <div class="container">
+    <h3 class="subtitle"> About this website </h3>
+    I could be convinced to open source this website, but probably not at the moment.
+  </div>
+  <br />
+  <div class="container">
+    <Timeline />
+  </div>
 </Layout>
 </template>
 
 <script>
 import GithubList from '~/components/GithubList'
+import Skills from '~/components/Skills'
+import Timeline from '~/components/Timeline'
 import Layout from '~/layouts/Default.vue'
 export default {
   components: {
     Layout,
-    GithubList
+    GithubList,
+    Skills,
+    Timeline
   }
 }
 </script>
