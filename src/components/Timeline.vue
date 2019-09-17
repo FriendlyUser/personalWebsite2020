@@ -1,20 +1,31 @@
 <template>
 <div class="container">
-  <div class="columns is-multiline">
+  <h1 class="title">Work Experience and Education</h1>
+  <h2 class="subtitle">Notable Work History</h2>
+  <div class="columns" v-for="job in experience" v-bind:key="job.name">
     <div class="column is-two-thirds">
-      <h2 class="title">Senior Front End Developer</h2>
-      <h2 class="subtitle">Foobar Studios</h2>
+      <h4 class='title is-4'> {{ job.company }} </h4>
+      <h5 class='subtitle is-5'> {{ job.title }} </h5>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        {{ job.description }}
+        asdasd
       </p>
     </div>
     <div class="column is-one-thirds">
-      <span class="text-primary">May 2014 - Present</span>  
+      <span class="text-primary">{{ job.date }}</span>  
     </div>
   </div>
 </div>
 </template>
+
 <script>
+import experience from '@/data/experience.yaml'
+export default {
+  data() {
+    // eventually get it parsing local json and yaml files
+    return {
+      experience
+    }
+  }
+}
 </script>
-<style scoped>
-</style>

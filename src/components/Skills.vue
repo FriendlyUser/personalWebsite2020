@@ -30,9 +30,6 @@
 </template>
 
 <script>
-</script>
-
-<script>
 import skills from '@/data/skills.yaml'
 export default {
   data() {

@@ -14,11 +14,10 @@
   <div class="container">
     <h3 class="subtitle"> About this website </h3>
     I could be convinced to open source this website, but probably not at the moment.
+    asdassd
   </div>
   <br />
-  <div class="container">
-    <Timeline />
-  </div>
+  <Timeline />
 </Layout>
 </template>
 
@@ -38,15 +37,4 @@ export default {
 </script>
 
 <style>
-
-.gamer { 
-  font-size: 128px !important; 
-  color: #08c;
-  text-align: center;
-  justify-content: center;
-  justify-self: center;
-}
-.gamer, .gamer:before {
-    font-size: 128px !important;
-}
 </style>
