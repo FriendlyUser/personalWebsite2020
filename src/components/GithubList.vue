@@ -4,7 +4,7 @@
     <div class="columns is-multiline">
       <div v-for="(item, index) in $static.allGithubProject.edges" v-bind:key="item.id">
         <div class="column is-quarter">
-          <div class="card">
+          <div class="card"  data-aos="flip-down">
             <header class="card-header">
               <p class="card-header-title">
                 {{ item.node.title}}

@@ -1,9 +1,11 @@
 <template>
 <div class="container">
+  <br /> 
+  <br />
   <h1 class="title">Skills</h1>
   <h2 class="subtitle">List is not comprehensive</h2>
   <div class="columns is-multiline">
-    <div class="column is-narrow" v-for="skill in skills" v-bind:key="skill.name">
+    <div class="column is-narrow" v-for="skill in skills" v-bind:key="skill.name" data-aos="flip-dpwm">
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
@@ -13,7 +15,7 @@
             </b-taglist>
           </p>
         </header>
-        <div class="card-content">
+        <div class="card-content" data-aos="flip-up">
           <div class="content">
              <b>Skill: </b>
              <b-icon v-for="index in 5" :key="index"

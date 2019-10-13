@@ -3,6 +3,8 @@
 import DefaultLayout from '~/layouts/Default.vue'
 import Buefy from 'buefy'
 import 'buefy/dist/buefy.css'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 export default function (Vue, { router, head, isClient }) {
   // adding material design icons
   head.link.push({
@@ -10,6 +12,7 @@ export default function (Vue, { router, head, isClient }) {
     href: 'https://cdn.materialdesignicons.com/2.5.94/css/materialdesignicons.min.css'
   })
   Vue.use(Buefy)
+  Vue.use(AOS.init())
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
 }

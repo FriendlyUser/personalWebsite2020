@@ -18,6 +18,7 @@
   </div>
   <br />
   <Timeline />
+  <ContactMe />
 </Layout>
 </template>
 
@@ -26,12 +27,14 @@ import GithubList from '~/components/GithubList'
 import Skills from '~/components/Skills'
 import Timeline from '~/components/Timeline'
 import Layout from '~/layouts/Default.vue'
+import ContactMe from '~/components/ContactMe'
 export default {
   components: {
     Layout,
     GithubList,
     Skills,
-    Timeline
+    Timeline,
+    ContactMe
   }
 }
 </script>
