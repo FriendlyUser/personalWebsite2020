@@ -2,6 +2,9 @@
 <Layout title="David Li Portfolio">
   <br />
   <br />
+  <AnimatedTitle />
+  <br />
+  <br />
   <Skills />
   <br />
   <div class="container">
@@ -28,13 +31,15 @@ import Skills from '~/components/Skills'
 import Timeline from '~/components/Timeline'
 import Layout from '~/layouts/Default.vue'
 import ContactMe from '~/components/ContactMe'
+import AnimatedTitle from '~/components/AnimatedTitle'
 export default {
   components: {
     Layout,
     GithubList,
     Skills,
     Timeline,
-    ContactMe
+    ContactMe,
+    AnimatedTitle
   }
 }
 </script>

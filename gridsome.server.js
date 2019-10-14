@@ -29,9 +29,8 @@ module.exports = function (api) {
     })
     github_data.forEach(project =>  {
       if ( project.stargazers_count > 1 ) {
-        const contentType = store.addContentType({
-          typeName: 'GithubProject',
-          route: '/project/:name/'
+        const contentType = store.addCollection({
+          typeName: 'GithubProject'
         })
         // figure out how to pull badges somehow
         // dump all data inside, subfilter later

@@ -21,13 +21,16 @@ module.exports = {
   siteName: 'David Li Portoflio Site',
   siteUrl: 'https://friendlyuser.github.io',
   pathPrefix: '/personalWebsite2020',
+  templates: {
+    GithubProject: '/project/:name/',
+    Post: '/blog/:slug'
+  },
   plugins: [
     {
       use: '@gridsome/source-filesystem',
       options: {
         path: 'blog/**/*.md',
-        typeName: 'Post',
-        route: '/blog/:slug'
+        typeName: 'Post'
       }
     }
   ],

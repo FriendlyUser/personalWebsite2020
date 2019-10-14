@@ -53,12 +53,7 @@
   <!-- Hero content: will be in the middle -->
   <div class="hero-body">
     <div class="container has-text-centered">
-      <h1 class="title">
-        David Li 
-      </h1>
-      <h2 class="subtitle">
-        Software Engineer <br />
-      </h2>
+      <AnimatedTitle />
     </div>
   </div>
 
@@ -79,3 +74,16 @@
   </div>
 </section>
 </template>
+
+<script>
+import AnimatedTitle from '~/components/AnimatedTitle'
+export default {
+  name: 'Navbar',
+  data() {
+    return {}
+  },
+  components: {
+    AnimatedTitle
+  }
+}
+</script>
