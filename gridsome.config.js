@@ -19,8 +19,8 @@ function addStyleResource (rule) {
 
 module.exports = {
   siteName: 'David Li Portoflio Site',
-  siteUrl: 'https://friendlyuser.github.io',
-  pathPrefix: '/personalWebsite2020',
+  siteUrl: 'https://gfleet.games',
+  pathPrefix: '/',
   templates: {
     GithubProject: '/project/:name/',
     Post: '/blog/:slug'
