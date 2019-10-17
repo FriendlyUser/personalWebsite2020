@@ -12,7 +12,12 @@ export default function (Vue, { router, head, isClient }) {
     href: 'https://cdn.materialdesignicons.com/2.5.94/css/materialdesignicons.min.css'
   })
   Vue.use(Buefy)
-  Vue.use(AOS.init())
+  try {    
+    Vue.use(AOS.init())
+  }
+  catch (err) {
+    console.log(err)
+  }
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
 }
