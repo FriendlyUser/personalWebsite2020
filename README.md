@@ -15,3 +15,5 @@ I have added extra folders called `project` and `util` to store local markdown f
 2. `cd my-gridsome-site` to open the folder
 3. `gridsome develop` to start a local dev server at `http://localhost:8080`
 4. Happy coding 🎉🙌
+
+Added privacy policy for games.
