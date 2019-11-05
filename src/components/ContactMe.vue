@@ -1,6 +1,7 @@
 <template>
   <div class="container">
-    <h4 class="subtitle"> Contact Me </h4>
+    <br />
+    <h1 class="title"><a id="contact">Contact Me</a></h1>
     <form name="contact" method="POST" action="https://formspree.io/davidli012345@gmail.com">
       <b-field label="Name">
           <b-input name="name" value="Kevin Garvey"></b-input>
@@ -29,22 +30,6 @@
 
        <button class="button is-primary" :disabled="isDisabled">Submit</button>
     </form>
-    <ul class="fa-ul" itemscope="">
-      <li>
-        <i class="fa-li fas fa-phone fa-2x" aria-hidden="true"></i>
-        <span id="person-telephone" itemprop="telephone"><a href="tel:250-479%206036">250-479 6036</a></span>
-      </li>
-      <li>
-        <i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
-        <span id="person-address" itemprop="address">6105 Kingsway Ave, Vancouver, British Columbia, Canada</span>
-      </li>
-      <li>
-        <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
-        <span>Monday 10:00 to 13:00<br>
-                  Wednesday 09:00 to 10:00<br>
-                  Otherwise email to book an appointment</span>
-      </li>
-    </ul>
   </div>
 </template>
 

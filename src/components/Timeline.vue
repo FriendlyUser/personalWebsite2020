@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-  <h1 class="title">Work Experience and Education</h1>
+  <h1 class="title"><a id="work">Work Experience and Education</a></h1>
   <h2 class="subtitle">Notable Work History</h2>
   <div class="columns" v-for="job in experience" v-bind:key="job.name" data-aos="fade">
     <div class="column is-two-thirds">

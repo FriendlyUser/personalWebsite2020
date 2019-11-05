@@ -62,12 +62,10 @@
     <nav class="tabs">
       <div class="container">
         <ul>
-          <li class="is-active"><a>Projects</a></li>
-          <li><a>Skills</a></li>
-          <li><a>History</a></li>
-          <li><a>Content</a></li>
-          <li><a>About</a></li>
-          <li><a>Footer</a></li>
+          <li class="is-active"><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href='#contact'>Contact</a></li>
         </ul>
       </div>
     </nav>
