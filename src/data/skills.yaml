@@ -63,7 +63,7 @@ php:
   stars: 2 # out of 5
   description: Used laravel at work
   tagType: is-light
-  iconType: is-danger
+  iconType: is-primary
 
 html5:
   name: HTML5
