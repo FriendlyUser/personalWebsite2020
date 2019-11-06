@@ -21,10 +21,10 @@ module.exports = function (api) {
   api.loadSource( async store => {
     // put github data from 
     const { GITHUB_API_TOKEN, GITHUB_USERNAME } = process.env
-    const { data: github_data = [] } = await axios.get(`https://api.github.com/users/${GITHUB_USERNAME}/repos?sort="pushed"`, {
+    // get all repos, only public ones
+    const { data: github_data = [] } = await axios.get(`https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100`, {
         headers: { 'Authorization': `token ${GITHUB_API_TOKEN}` }
     }).then(function(response) {
-      // filter for specific github repos
       return response
     })
     github_data.forEach(project =>  {

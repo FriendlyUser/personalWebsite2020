@@ -5,8 +5,8 @@ vue:
   stars: 3 # out of 5
   description: Use vue for open source
   # Colors for tags and icons, confusing I know
-  tagType: is-success
-  iconType: is-info
+  tagType: is-info
+  iconType: is-success
 
 react:
   name: React
