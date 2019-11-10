@@ -28,7 +28,7 @@
         </b-input>
       </b-field>
 
-       <button class="button is-primary" :disabled="isDisabled">Submit</button>
+       <button class="button is-primary">Submit</button>
     </form>
   </div>
 </template>
