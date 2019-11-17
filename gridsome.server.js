@@ -26,6 +26,8 @@ module.exports = function (api) {
         headers: { 'Authorization': `token ${GITHUB_API_TOKEN}` }
     }).then(function(response) {
       return response
+    }).catch(function(err) {
+      console.log(err)
     })
     github_data.forEach(project =>  {
       if ( project.stargazers_count > 1 ) {

@@ -55,6 +55,7 @@
   <div class="container">
     <h3 class="subtitle"> About this website </h3>
     I could be convinced to open source this website, but probably not at the moment.
+      <!-- <iframe class="dialogflow" width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/c39aa5e3-2bab-49a5-a4de-b4bf580289f4"></iframe> -->
   </div>
   <br />
   <Timeline />
@@ -79,21 +80,6 @@ export default {
     AnimatedTitle
   },
   created: function() {
-    try {
-      if (process.isClient) {
-        this.window.botpressWebChat.init({
-          host: 'https://lit-beach-86646.herokuapp.com/',
-          botId: 'smalltalk'
-        })
-      } else {
-        this.window.botpressWebChat.init({
-          host: 'https://lit-beach-86646.herokuapp.com/',
-          botId: 'smalltalk'
-        })
-      }
-    } catch(err) {
-      console.log(err)
-    }
   },
 }
 </script>
@@ -101,5 +87,9 @@ export default {
 <style>
 .other-skills-icons:before {
   font-size: 6rem !important;
+}
+.dialogflow {
+  height: 400px;
+  width: 450px;
 }
 </style>>
