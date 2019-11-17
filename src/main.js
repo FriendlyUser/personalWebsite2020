@@ -11,6 +11,11 @@ export default function (Vue, { router, head, isClient }) {
     rel: 'stylesheet',
     href: 'https://cdn.materialdesignicons.com/2.5.94/css/materialdesignicons.min.css'
   })
+  // Add an external Javascript before the closing </body> tag
+  head.script.push({
+    src: 'https://lit-beach-86646.herokuapp.com/assets/modules/channel-web/inject.js',
+    body: true
+  })
   Vue.use(Buefy)
   try {    
     Vue.use(AOS.init())

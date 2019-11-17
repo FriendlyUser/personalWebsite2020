@@ -77,7 +77,13 @@ export default {
     Timeline,
     ContactMe,
     AnimatedTitle
-  }
+  },
+  created: function() {
+    window.botpressWebChat.init({
+      host: 'https://lit-beach-86646.herokuapp.com/',
+      botId: 'smalltalk'
+    })
+  },
 }
 </script>
 
