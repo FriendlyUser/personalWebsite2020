@@ -79,10 +79,21 @@ export default {
     AnimatedTitle
   },
   created: function() {
-    window.botpressWebChat.init({
-      host: 'https://lit-beach-86646.herokuapp.com/',
-      botId: 'smalltalk'
-    })
+    try {
+      if (process.isClient) {
+        this.window.botpressWebChat.init({
+          host: 'https://lit-beach-86646.herokuapp.com/',
+          botId: 'smalltalk'
+        })
+      } else {
+        this.window.botpressWebChat.init({
+          host: 'https://lit-beach-86646.herokuapp.com/',
+          botId: 'smalltalk'
+        })
+      }
+    } catch(err) {
+      console.log(err)
+    }
   },
 }
 </script>

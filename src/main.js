@@ -23,6 +23,7 @@ export default function (Vue, { router, head, isClient }) {
   catch (err) {
     console.log(err)
   }
+  if (process.isClient) Vue.prototype.window = window
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
 }
