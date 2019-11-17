@@ -46,6 +46,8 @@ steps:
     git commit -m "Publishing GitHub Pages  ***NO_CI***"
     git remote add origin https://$(USERNAME):$(GITHUB_TOKEN)@github.com/$(Build.Repository.Name).git
     git push origin HEAD:refs/heads/gh-pages --force
+    git remote add gh https://$(USERNAME):$(GITHUB_TOKEN)@github.com/FriendlyUser/FriendlyUser.github.io.git
+    git push gh master --force
   displayName: 'Publish GitHub Pages'
   condition: |
     and(not(eq(variables['Build.Reason'], 'PullRequest')),
