@@ -17,4 +17,4 @@ Pulls data from github and displays it.
 3. `gridsome develop` to start a local dev server at `http://localhost:8080`
 4. Happy coding 🎉🙌
 
-Added privacy policy for games.
+Added privacy policy for games and basic animations.
