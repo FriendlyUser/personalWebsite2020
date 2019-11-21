@@ -57,7 +57,6 @@ query {
         created_at
         updated_at
         stargazers_count
-        description
         html_url
         language
       }
