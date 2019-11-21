@@ -59,6 +59,7 @@ query {
         stargazers_count
         html_url
         language
+        description
       }
     }
   }

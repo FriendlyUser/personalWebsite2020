@@ -36,7 +36,7 @@ module.exports = function (api) {
         })
         // figure out how to pull badges somehow
         // dump all data inside, subfilter later
-        const { id, name, node_id, html_url, created_at, updated_at, language, forks, stargazers_count } = project
+        const { id, name, node_id, html_url, created_at, updated_at, language, forks, stargazers_count, description } = project
 
         // get markdown file if exists
         var contents = parseMD(`project/${name}/index.md`)
@@ -51,7 +51,8 @@ module.exports = function (api) {
           language: language,
           forks: forks,
           stargazers_count: stargazers_count,
-          data: project
+          data: project,
+          description: description
         })
       }
     })
