@@ -19,20 +19,11 @@ steps:
   inputs:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
-
-- task: DownloadSecureFile@1
-  name: envFILE
-  inputs:
-    secureFile: 'GRIDSOME_ENV'
   
 - script: |
     npm install
-    echo $(envFILE.secureFilePath) moving root
-    ls -ha || true
     cp $(envFILE.secureFilePath) .env
-    ls -a || true
-    npm install -g @gridsome/cli
-    gridsome build
+    npx gridsome build
     ls
     chmod +x static/insertBotpress.sh || true
     static/insertBotpress.sh || true
