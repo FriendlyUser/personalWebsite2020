@@ -20,7 +20,7 @@ module.exports = function (api) {
 
   api.loadSource( async store => {
     // put github data from 
-    const { GITHUB_API_TOKEN, GITHUB_USERNAME } = process.env
+    const { GITHUB_API_TOKEN, GITHUB_USERNAME = 'FriendlyUser' } = process.env
     // get all repos, only public ones
     const { data: github_data = [] } = await axios.get(`https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=50`, {
         headers: { 'Authorization': `token ${GITHUB_API_TOKEN}` }
