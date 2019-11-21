@@ -2,8 +2,9 @@
 
 Created in gridsome used to showcase my projects and to stop having issues updating hugo academic.
 
-
 I have added extra folders called `project` and `util` to store local markdown files and for data processing.
+
+Pulls data from github and displays it.
 
 ### 1. Install Gridsome CLI tool if you don't have
 
@@ -16,4 +17,4 @@ I have added extra folders called `project` and `util` to store local markdown f
 3. `gridsome develop` to start a local dev server at `http://localhost:8080`
 4. Happy coding 🎉🙌
 
-Added privacy policy for games.
+Added privacy policy for games and basic animations.
