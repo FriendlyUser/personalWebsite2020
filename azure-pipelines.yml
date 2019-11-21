@@ -22,16 +22,15 @@ steps:
   
 - script: |
     npm install
-    cp $(envFILE.secureFilePath) .env
+    echo GITHUB_API_TOKEN=>> .env
     npx gridsome build
     ls
-    chmod +x static/insertBotpress.sh || true
-    static/insertBotpress.sh || true
   displayName: 'npm install'
 
 - script: |
     rm -rf .git
     cd dist
+    ls
     git init
     git config --local user.name "Azure Pipelines"
     git config --local user.email "azuredevops@microsoft.com"

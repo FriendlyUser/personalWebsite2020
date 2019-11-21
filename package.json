@@ -1,6 +1,6 @@
 {
-  "name": "2020",
-  "private": true,
+  "name": "personalwebsite",
+  "description": "Description of personal website",
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
