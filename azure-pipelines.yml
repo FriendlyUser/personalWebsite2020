@@ -22,7 +22,7 @@ steps:
   
 - script: |
     npm install
-    echo GITHUB_API_TOKEN=>> .env
+    echo GITHUB_API_TOKEN=$(GITHUB_TOKEN) >> .env
     npx gridsome build
     ls
   displayName: 'npm install'
