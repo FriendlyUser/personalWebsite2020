@@ -22,7 +22,7 @@ module.exports = function (api) {
     // put github data from 
     const { GITHUB_API_TOKEN, GITHUB_USERNAME = 'FriendlyUser' } = process.env
     // get all repos, only public ones
-    const { data: github_data = [] } = await axios.get(`https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=50`, {
+    const { data: github_data = [] } = await axios.get(`https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100`, {
         headers: { 'Authorization': `token ${GITHUB_API_TOKEN}` }
     }).then(function(response) {
       return response
