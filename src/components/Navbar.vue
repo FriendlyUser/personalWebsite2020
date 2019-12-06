@@ -4,6 +4,7 @@
     <div class='dli-bg-image has-background-primary'>
     </div>
   </div>
+  <div style='overflow-y: hidden;'>
   <div class='box-container'>
     <!-- Remove this later -->
     <div class='box-hero'>
@@ -11,6 +12,7 @@
       <div class='wave -two'></div>
       <div class='wave -three'></div>
     </div>
+  </div>
   </div>
   <section class="hero is-primary is-medium">
     <!-- Hero head: will stick at the top -->
@@ -96,8 +98,10 @@
   height: 100%;
   background-image: url("/clouds-min.jpg") !important;
   background-color: #7957d5;
-  background-size: cover;
-  background-position: center;
+  background-position: center bottom;
+  -webkit-animation:mymove 50s linear infinite;
+  /* Safari and Chrome */
+  animation: mymove 50s linear infinite;
   filter: brightness(0.5);
 }
 
@@ -106,42 +110,24 @@
   width: 100%;
   height: 100%;
 }
-.box-container {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transform: scale(0.5) translateX(150%) translateY(50%);
+
+@-webkit-keyframes mymove {
+    from {
+        background-position: 0% 0%;
+    }
+    to {
+        background-position: 0% 50%;
+    }
+}
+@keyframes mymove {
+    from {
+        background-position: 0% 0%;
+    }
+    to {
+        background-position: 0% 50%;
+    }
 }
 
-.wave {
-  position: absolute;
-  opacity: .4;
-  width: 1500px;
-  height: 1300px;
-  margin-left: -150px;
-  margin-top: -250px;
-  border-radius: 43%;
-}
-@keyframes rotate {
-  from { transform: rotate(0deg); }
-  from { transform: rotate(360deg); }
-}
-.wave.-one {
-  animation: rotate 7000ms infinite linear;
-  opacity: .1;
-  background: #0af;
-}
-
-.wave.-two {
-  animation: rotate 3000ms infinite linear;
-  opacity: .1;
-  background: black;
-}
-
-.wave.-three {
-  animation: rotate 7500ms infinite linear;
-  background-color: #77daff;
-}
 </style>
 <script>
 import AnimatedTitle from '~/components/AnimatedTitle'

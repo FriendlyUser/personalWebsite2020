@@ -22,11 +22,6 @@ export default {
     return {
       loaded: false
     }
-  },
-  mounted() {
- // run after everything is in-place
-      this.loaded = true
-      console.log(this.loaded)
   }
 }
 </script>
