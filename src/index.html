@@ -1,20 +1,34 @@
 <!DOCTYPE html>
-<html ${htmlAttrs} style='width: 100%; height: 100%;'>
+<html ${htmlAttrs} style='width: 100%; height: 100%; overflow-x: hidden;'>
   <head>
     ${head}
+    <style type="text/css">
+      body {
+        background-color: #4086cd
+      }
+      body.loaded > div#preloading-screen > div:first-child.loadingio-spinner-blocks-dkreko65cdt {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.5s linear;
+      }
+      body.loaded {
+        background: none;
+      }
+    </style>
     <script>
         function load() {
-          console.log("load event detected!");
-          setTimeout(function() {
-            console.log('hiding it here')
-            document.body.className += ' ' + 'loaded';
-          }, 2000)
+          document.body.className += ' ' + 'loaded';
+          try {
+            document.getElementById('preloading-screen').classList.add('no-js')
+          } catch(error) {
+            console.log(error)
+          }
         }
         window.onload = load;
     </script>
   </head>
-  <body ${bodyAttrs} style='width: 100%; height: 100%; background-color: #4086cd;'>
-      <div class="wrapper-loader" style='position: absolute; display:block; top: 50%; left: calc(50% - 85.5px);'>
+  <body ${bodyAttrs} style='width: 100%; height: 100%; overflow-x: hidden;'>
+      <div id="preloading-screen" class="wrapper-loader" style='position: absolute; display:block; top: 50%; left: calc(50% - 85.5px);'>
           <div class="loadingio-spinner-blocks-dkreko65cdt"><div class="ldio-ktyaxjgxc5">
               <div style='left:4.275px;top:4.275px;animation-delay:0s'></div><div style='left:58.995px;top:4.275px;animation-delay:0.36764705882352944s'></div><div style='left:113.715px;top:4.275px;animation-delay:0.7352941176470589s'></div><div style='left:4.275px;top:58.995px;animation-delay:2.573529411764706s'></div><div style='left:113.715px;top:58.995px;animation-delay:1.1029411764705883s'></div><div style='left:4.275px;top:113.715px;animation-delay:2.2058823529411766s'></div><div style='left:58.995px;top:113.715px;animation-delay:1.8382352941176472s'></div><div style='left:113.715px;top:113.715px;animation-delay:1.4705882352941178s'></div>
               </div></div>
@@ -61,20 +75,6 @@
     body > div.rickrolling {
       display: none;
     }
-    body.loaded > div.rickrolling {
-      display: block;
-    }
-    body.loaded > div.wrapper-loader {
-      display: none;             
-      z-index: 0;
-    }
-    body.loaded {
-      background-color: white !important;
-    }
-    body.loaded > div.wrapper-loader > div.loadingio-spinner-blocks-dkreko65cdt {
-      display: none;
-    }
-
   </style>
   <script type="text/javascript">
   </script>

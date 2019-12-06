@@ -18,3 +18,14 @@ Pulls data from github and displays it.
 4. Happy coding 🎉🙌
 
 Added privacy policy for games and basic animations.
+
+
+1. Add Waves Background for Hero Header
+https://dev.to/pixmy/create-waves-with-pure-css-5gp
+
+
+2. Include animate.css instead of aos or do keyframes somehow and add on mount.
+Add Hexagon Skill List Somehow
+
+http://demo.themefisher.com/demos/?theme=phantom
+

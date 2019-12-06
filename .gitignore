@@ -7,3 +7,5 @@ dist
 .env
 .env.*
 featured.png
+*.jpg
+!*-min.jpg
