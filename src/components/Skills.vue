@@ -4,7 +4,8 @@
   <br />
   <div>
     <header class='skills-header'>
-      <div class="header__bg" data-aos="zoom-in-down">
+      <div class="header__bg" data-aos="zoom-in-down" data-aos-easing="linear"
+      data-aos-duration="1500">
       </div>
       <h1>Technical Skills</h1>
       <hr />
@@ -17,7 +18,7 @@
   <br />
 
   <div class="columns is-multiline is-centered" id='skills-cards'>
-    <div class="column is-narrow is-flex-desktop" v-for="skill in skills" v-bind:key="skill.name" data-aos="flip-down">
+    <div class="column is-narrow is-flex-desktop" v-for="skill in skills" v-bind:key="skill.name" data-aos="flip-down" data-aos-duration="1500">
       <div class="card skill-card">
         <header class="card-header">
           <p class="card-header-title">
