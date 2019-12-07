@@ -4,7 +4,6 @@
   <br />
   <br />
   <br />
-  <RightRibbonHeader />
   <div class="container">
     <h2 class="subtitle">Other Skills</h2>
     <div class='section'>

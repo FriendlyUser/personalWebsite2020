@@ -24,7 +24,7 @@
               <!-- <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo"> -->
               <img src="https://s.gravatar.com/avatar/d5a6e001f027e8cf3dbf048a926baa77?s=160" alt="Logo" />
             </a>
-            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+            <span class="navbar-burger burger" data-target="navbarMenuHeroA" style='color: white !important;'>
               <span></span>
               <span></span>
               <span></span>
