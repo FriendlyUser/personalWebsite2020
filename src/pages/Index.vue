@@ -4,8 +4,9 @@
   <br />
   <br />
   <br />
-  <div class="container">
+  <div class="container" style='min-height: 50rem;'>
     <h2 class="subtitle">Other Skills</h2>
+    <Header headerName="Personality" linkValue="personal" subHeader="Key Attributes" right/>
     <div class='section'>
       <div class="columns is-centered">
         <div class="column" />
@@ -73,6 +74,7 @@ import Layout from '~/layouts/Default.vue'
 import ContactMe from '~/components/ContactMe'
 import AnimatedTitle from '~/components/AnimatedTitle'
 import RightRibbonHeader from '~/components/RightRibbonHeader'
+import Header from '~/components/Header'
 export default {
   components: {
     Layout,
@@ -81,7 +83,8 @@ export default {
     Timeline,
     ContactMe,
     AnimatedTitle,
-    RightRibbonHeader
+    RightRibbonHeader,
+    Header
   },
   created: function() {
   },
