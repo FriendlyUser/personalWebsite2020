@@ -46,11 +46,5 @@ module.exports = {
     types.forEach(type => {
       addStyleResource(config.module.rule('scss').oneOf(type))
     })
-
-    config.module
-      .rule('pug')
-      .test(/\.pug$/)
-      .use('pug-plain-loader')
-      .loader('pug-plain-loader')
   }
 }

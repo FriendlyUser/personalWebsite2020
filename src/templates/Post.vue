@@ -1,7 +1,7 @@
-<template lang="pug">
-layout
-  div(v-html="$page.post.content")
-  p Garbage Content
+<template>
+  <Layout>
+    <div v-html="$page.post.content" />
+  </Layout>
 </template>
 
 
