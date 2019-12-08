@@ -55,9 +55,6 @@ export default {
 </script>
 
 <style>
-.other-skills-icons:before {
-  font-size: 6rem !important;
-}
 .dialogflow {
   height: 400px;
   width: 450px;
