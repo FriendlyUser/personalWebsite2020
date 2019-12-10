@@ -1,7 +1,6 @@
-<template lang="pug">
-Layout
-  h1 About us
-  p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+<template>
+<Layout title="David Li Portfolio">
+</Layout>
 </template>
 
 
