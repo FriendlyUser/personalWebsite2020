@@ -1,7 +1,7 @@
 syo:
   company: Shop Your Own Mortgage
   title: Software Engineer
-  date: September 2018 --- Present
+  date: September 2018 ――― Present
   description: >
     Worked on implementing complex front end design, 
     a laravel backend, dev ops, qa testing and
@@ -10,7 +10,7 @@ syo:
 
 mbl:
   company: Membran Labs
-  date: May 2018 --- August 2018
+  date: May 2018 ――― August 2018
   title: Decentralized Application Developer
   description: >
     Developed Blockchain applications using truffle, drizzle and react
@@ -18,7 +18,7 @@ mbl:
 
 MOTIIMB:
   company: Ministry of British Columbia Information Management Branch
-  date: September 2016 --- April 2017
+  date: September 2016 ――― April 2017
   title: Technical Analyst
   description: >
     Worked with JIRA, Confluence to create technical documentation
@@ -29,7 +29,7 @@ MOTIIMB:
 
 UVIC:
   company: University of Victoria
-  date: September 2014 --- August 2019
+  date: September 2014 ――― August 2019
   title: Computer Engineering Degree With Distinction
   description: >
     Learnt linear algebra, calculus, programming, software design,
