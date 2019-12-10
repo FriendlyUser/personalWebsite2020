@@ -17,15 +17,36 @@
   <GithubList />
   <br />
   <div class="container">
+    <h1 class="title"> Blog </h1>
     <h3 class="subtitle"> About this website </h3>
     I could be convinced to open source this website, but probably not at the moment.
-      <!-- <iframe class="dialogflow" width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/c39aa5e3-2bab-49a5-a4de-b4bf580289f4"></iframe> -->
+    <div class="section">
+      <div class="columns">
+        <PostList v-for="edge in $page.allPost.edges" :key="edge.node.id" :post="edge.node" />
+      </div>
+    </div>
   </div>
   <br />
   <Timeline />
   <ContactMe />
 </Layout>
 </template>
+
+<page-query>
+query {
+  allPost(sortBy: "date", order: DESC) {
+    edges {
+      node {
+        id
+        title
+        timeToRead
+        path
+        description
+      }
+    }
+  }
+}
+</page-query>
 
 <script>
 import GithubList from '~/components/GithubList'
@@ -37,6 +58,7 @@ import AnimatedTitle from '~/components/AnimatedTitle'
 import RightRibbonHeader from '~/components/RightRibbonHeader'
 import Header from '~/components/Header'
 import OtherSkills from '~/components/OtherSkills'
+import PostList from '~/components/PostList'
 export default {
   components: {
     Layout,
@@ -47,7 +69,8 @@ export default {
     ContactMe,
     AnimatedTitle,
     RightRibbonHeader,
-    Header
+    Header,
+    PostList
   },
   created: function() {
   },

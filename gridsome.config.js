@@ -23,7 +23,7 @@ module.exports = {
   pathPrefix: '/personalWebsite2020',
   templates: {
     GithubProject: '/project/:name/',
-    Post: '/blog/:slug'
+    Post: '/blog/:name/'
   },
   plugins: [
     {

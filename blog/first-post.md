@@ -1,6 +1,7 @@
 ---
-slug: first-post
 title: This is my first post!
+description: This is my first post, read all the news here.
+date: 2019-05-04
 ---
 
 # This is some first level title
