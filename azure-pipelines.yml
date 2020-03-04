@@ -37,6 +37,7 @@ steps:
 
 - script: |
     rm -rf .git
+    cp static/ads.txt dist/ads.txt || true
     cd dist
     ls
     git init
