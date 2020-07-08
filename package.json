@@ -10,7 +10,7 @@
     "aos": "2.3.4",
     "axios": "0.19.0",
     "buefy": "0.8.8",
-    "gridsome": "0.7.12"
+    "gridsome": "0.7.19"
   },
   "devDependencies": {
     "@gridsome/source-filesystem": "0.6.2",
