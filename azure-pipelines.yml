@@ -14,14 +14,6 @@ variables:
   - name: USERNAME
     value: FriendlyUser
 
-schedules:
-- cron: "0 12 * * 0"
-  displayName: Weekly Sunday build
-  branches:
-    include:
-    - master
-  always: true
-
 steps:
 - task: NodeTool@0
   inputs:
